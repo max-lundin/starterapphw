@@ -1,0 +1,74 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #030303;
+  color: #EFEFEF;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-image: url('https://example.com/spider-web-background.jpg');
+  background-size: cover;
+}
+
+h1, h3 {
+  color: #C51130; /* Spider-Man red */
+}
+
+.enemies-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.enemy {
+  flex-basis: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.enemy img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border: 2px solid #C51130; /* Spider-Man red border */
+}
+
+a, .button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+a:hover, .button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjustments for links to make them stand out */
+a {
+  color: #C51130; /* Spider-Man red for links */
+}
+
+.enemies-container {
+  display: flex;
+  justify-content: space-around; /* This spreads the columns evenly across the container */
+  align-items: flex-start; /* Aligns items at the start of the flex container */
+  flex-wrap: wrap; /* Allows items to wrap as needed */
+}
+
+.enemy {
+  flex-basis: 30%; /* Each enemy takes up roughly 30% of the container's width */
+  text-align: center; /* Centers the text and images within each enemy div */
+  margin-bottom: 20px; /* Adds some space between the rows when they wrap */
+}
+
+.enemy img {
+  max-width: 100%; /* Makes the images responsive */
+  height: auto; /* Maintains the aspect ratio */
+  margin-top: 10px; /* Adds some space above each image */
+}
